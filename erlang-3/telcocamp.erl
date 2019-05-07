@@ -2,11 +2,9 @@
 %% Module definition
 
 -module(telcocamp).
--export([horse/0, monkey/0, human/0,
-         hoarder/0, devourer/0, sick/0
-         %%, list_fruit/1, give/2, eat/2, eat_this/3
-         %% for testing only
-        ]).
+-export([animal/1,
+         horse/0, monkey/0, human/0,
+         hoarder/0, devourer/0, sick/0]).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Logic - basic behaviour
