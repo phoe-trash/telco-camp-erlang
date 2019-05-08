@@ -7,8 +7,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Logic - basic behaviour
 
-list_fruit(Fruit) ->
-    io:format("~w: I got: ~w~n", [self(), Fruit]).
+list_fruit(Inventory) ->
+    io:format("~w: I got: ~w~n", [self(), Inventory]).
 
 give(NewFruit, Inventory) ->
     io:format("~w: I got a ~w! Yay!~n", [self(), NewFruit]),

@@ -48,6 +48,9 @@ eat_this(Fruit, Inventory, EdibleFruit) ->
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Logic - animal definition
 
+animal(Edible) ->
+    animal([], Edible).
+
 animal(Inventory, Edible) ->
     animal(Inventory, Edible,
            [fun give/2, fun eat/2, fun eat_this/3]).
